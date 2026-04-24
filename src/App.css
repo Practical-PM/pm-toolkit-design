@@ -1,0 +1,27 @@
+@import '@toolkit-pm/design-system';
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app .main-content {
+  flex: 1;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  background: var(--bg-light);
+}
+
+.app-footer p {
+  margin: 0.35rem 0;
+}
+
+.footer-links a {
+  color: var(--primary-orange);
+}

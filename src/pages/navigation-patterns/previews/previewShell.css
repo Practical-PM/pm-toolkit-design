@@ -1,0 +1,96 @@
+/* Mini preview surfaces — uses design tokens only */
+.np-preview {
+  --np-chrome: var(--bg-elevated);
+  --np-surface: var(--bg-light);
+  --np-border: var(--border-color);
+  --np-accent: var(--primary-orange);
+  font-family: var(--font-system);
+  font-size: 11px;
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--np-border);
+  background: var(--np-surface);
+  overflow: hidden;
+}
+
+.np-preview__browser-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: var(--np-chrome);
+  border-bottom: 1px solid var(--np-border);
+}
+
+.np-preview__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--text-tertiary);
+}
+
+.np-preview__url {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+
+.np-preview__body {
+  min-height: 120px;
+  padding: var(--spacing-sm);
+}
+
+.np-preview__phone {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 8px solid var(--np-chrome);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-surface);
+}
+
+.np-preview__phone-notch {
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--np-chrome);
+  font-size: 9px;
+  color: var(--text-tertiary);
+}
+
+.np-preview__nav-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.np-preview__link {
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.np-preview__link:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.np-preview__link.is-active {
+  color: var(--np-accent);
+  font-weight: 600;
+}
+
+.np-preview__pill {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 140, 66, 0.15);
+  color: var(--np-accent);
+}
